@@ -7,19 +7,19 @@ struct ListNode
     ListNode* next;
     ListNode(int x) : val(x), next(NULL) {}
 };
-class Solution {
-public:
-    vector<int> reversePrint(ListNode* head) {
-        vector<int> res;
-        while (head)
-        {
-            res.emplace_back(head->val);
-            head = head->next;
-        }
-        reverse(res.begin(), res.end());
-        return res;
-    }
-};
+//class Solution {
+//public:
+//    vector<int> reversePrint(ListNode* head) {
+//        vector<int> res;
+//        while (head)
+//        {
+//            res.emplace_back(head->val);
+//            head = head->next;
+//        }
+//        reverse(res.begin(), res.end());
+//        return res;
+//    }
+//};
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
